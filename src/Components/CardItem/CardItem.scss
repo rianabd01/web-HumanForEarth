@@ -1,0 +1,14 @@
+@import "../Index.scss";
+
+.card_item {
+  display: block;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+  transition: 0.3s; /* Efek transisi */
+  border-radius: 10px; /* Membuat sudut menjadi bulat */
+  padding: 16px; /* Menambahkan padding */
+}
+
+.card_item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Efek bayangan lebih besar saat di-hover */
+}

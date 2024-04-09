@@ -1,7 +1,9 @@
-import Header from "../Components/Header";
-import Hero from "../Components/Hero";
-import HomeContents from "../Components/HomeContents";
-import Footer from "../Components/Footer";
+import TabSlider from "../../Components/TabSlider/TabSlider.jsx";
+import "./Main.scss";
+import CardList from "../../Components/CardList/CardList.jsx";
+import Header from "../../Components/Header/Header.jsx";
+import Hero from "../../Components/Hero/Hero.jsx";
+import Footer from "../../Components/Footer/Footer.jsx";
 // import LatihanState from "../Components/LatihanState";
 // import UserList from "../Components/LatihanStateEffect";
 // import NavigationBar from "../Components/NavigationBar";
@@ -15,11 +17,12 @@ const Home = () => {
       <Header />
 
       <Hero />
-      <HomeContents />
-      {/* <button onClick={() => navigate("/checkin")}>Gass Checkout</button>
 
-      <LatihanState />
-      <UserList /> */}
+      <main id="main">
+        <TabSlider />
+        <CardList />
+      </main>
+
       <Footer />
     </>
   );

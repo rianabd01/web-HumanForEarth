@@ -1,5 +1,5 @@
-import "../Style/Header.scss";
-import NavigationBar from "./NavigationBar";
+import "./Header.scss";
+import NavigationBar from "../NavigationBar/NavigationBar.jsx";
 
 function Header() {
   return (

@@ -1,6 +1,6 @@
-import "../Style/TabSlider.scss";
+import "./TabSlider.scss";
 import { FaSunPlantWilt, FaLightbulb } from "react-icons/fa6";
-import tabImage1 from "../Public/Images/tabContent_Children.webp";
+import tabImage1 from "../../Public/Images/tabContent_Children.webp";
 import { useState } from "react";
 
 function TabSlider() {

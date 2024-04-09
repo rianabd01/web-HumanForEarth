@@ -1,5 +1,5 @@
-import "../Style/Hero.scss";
-import heroImage from "../Public/Images/hero_PineForest.webp";
+import "./Hero.scss";
+import heroImage from "../../Public/Images/hero_PineForest.webp";
 import { GrPlayFill } from "react-icons/gr";
 
 function Hero() {

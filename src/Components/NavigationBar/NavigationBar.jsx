@@ -1,5 +1,5 @@
-import "../Style/NavigationBar.scss";
-import Sidebar from "./Sidebar";
+import "./NavigationBar.scss";
+import Sidebar from "../Sidebar/Sidebar.jsx";
 import { CgMenuLeft } from "react-icons/cg";
 
 function NavigationBar() {

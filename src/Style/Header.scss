@@ -1,0 +1,38 @@
+@import "./Index.scss";
+
+header {
+  background-color: $primary_color-revert;
+  height: 5rem;
+  align-content: center;
+  .header_contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+
+    .brandLogo {
+      flex: 1;
+      display: flex;
+      margin: auto 0;
+      .brandLogo_content::after {
+        content: "";
+        width: 2px; /* Lebar garis vertikal */
+        height: 30px; /* Tinggi garis vertikal */
+        background-color: #333; /* Warna garis vertikal */
+        margin-left: 10px; /* Jarak antara logo dan garis */
+      }
+      .brandLogo_content {
+        font-size: 1.25em;
+        height: 100%;
+        font-weight: $fw-semi-bold;
+        line-height: 100%;
+        &_span1 {
+          color: gray;
+        }
+        &_span2 {
+          color: green;
+        }
+      }
+    }
+  }
+}

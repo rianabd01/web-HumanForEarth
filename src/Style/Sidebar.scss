@@ -1,0 +1,28 @@
+@import "./Index.scss";
+
+.menu {
+  display: none;
+  z-index: 100;
+  // background-color: rgba(240, 248, 255, 0.185);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  position: fixed;
+  li {
+    list-style-type: none;
+  }
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  .sidebar {
+    float: right;
+    width: 50vw;
+    height: 100vh;
+    background-color: $primary_color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}

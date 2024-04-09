@@ -1,0 +1,46 @@
+@import "./Index.scss";
+
+nav {
+  display: flex;
+  flex: 6;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  .navigation {
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+      margin: 0;
+      li {
+        list-style-type: none;
+        a {
+          font-weight: $fw-semi-bold;
+          text-decoration: none;
+          color: $text-dark-color;
+          font-size: 1em;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .open_sidebar {
+    button {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 1em;
+      font-weight: $fw-semi-bold;
+      svg {
+        font-size: 1.3em;
+        margin-left: 2px;
+      }
+    }
+  }
+}

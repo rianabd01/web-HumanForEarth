@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/web-HumanForEarth/static/css/main.fa2f0a76.css",
+    "main.js": "/web-HumanForEarth/static/js/main.c2389b28.js",
+    "static/js/453.b263fb46.chunk.js": "/web-HumanForEarth/static/js/453.b263fb46.chunk.js",
+    "static/media/hero_PineForest.webp": "/web-HumanForEarth/static/media/hero_PineForest.02034bdd17115596cfe4.webp",
+    "static/media/deforestationimage.jpg": "/web-HumanForEarth/static/media/deforestationimage.48e8f2208e4ebe0fd59f.jpg",
+    "static/media/tabContent_Children.webp": "/web-HumanForEarth/static/media/tabContent_Children.3fd9526206b36f8a9036.webp",
+    "index.html": "/web-HumanForEarth/index.html",
+    "main.fa2f0a76.css.map": "/web-HumanForEarth/static/css/main.fa2f0a76.css.map",
+    "main.c2389b28.js.map": "/web-HumanForEarth/static/js/main.c2389b28.js.map",
+    "453.b263fb46.chunk.js.map": "/web-HumanForEarth/static/js/453.b263fb46.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa2f0a76.css",
+    "static/js/main.c2389b28.js"
+  ]
+}

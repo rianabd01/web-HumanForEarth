@@ -1,0 +1,18 @@
+@import "../Variables.scss";
+.modal_container {
+  position: fixed;
+  background-color: rgba(0, 255, 255, 0.123);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .donate_modal {
+    background-color: whitesmoke;
+    width: 25rem;
+    height: 25rem;
+  }
+}

@@ -3,8 +3,10 @@
 .card_items {
   background-color: $primary_color-revert;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(5, 1fr);
-  gap: 1rem;
-  padding: 2rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  // height: 1000px;
 }

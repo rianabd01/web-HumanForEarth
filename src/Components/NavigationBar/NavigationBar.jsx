@@ -1,8 +1,14 @@
 import "./NavigationBar.scss";
 import Sidebar from "../Sidebar/Sidebar.jsx";
 import { CgMenuLeft } from "react-icons/cg";
+import { useContext } from "react";
+import { AppContext } from "../Context/SidebarToggle.jsx";
 
 function NavigationBar() {
+  const { setSidebarToggle } = useContext(AppContext);
+  const sidebarHandler = (click) => {
+    setSidebarToggle(click);
+  };
   return (
     <nav>
       <div className="navigation">
@@ -19,7 +25,7 @@ function NavigationBar() {
         </ul>
       </div>
       <div className="open_sidebar">
-        <button>
+        <button onClick={() => sidebarHandler(true)}>
           <span>menu</span>
 
           <CgMenuLeft />

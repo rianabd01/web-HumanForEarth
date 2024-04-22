@@ -10,40 +10,40 @@ function TabSlider() {
     setTabIndex(index);
   };
   return (
-    <section className="container">
-      <div className="tab_navigation_bar">
-        <div className="tab_navigation">
-          <ul className="tab_menu">
-            <li
-              className={tabIndex === 1 ? "tab_button active" : "tab_button"}
-              onClick={() => toggleIndex(1)}
-            >
-              <i>
-                <FaSunPlantWilt />
-              </i>
-              <span>Purpose</span>
-            </li>
-            <li
-              className={tabIndex === 2 ? "tab_button active" : "tab_button"}
-              onClick={() => toggleIndex(2)}
-            >
-              <i>
-                <FaSunPlantWilt />
-              </i>
-              <span>Problems</span>
-            </li>
-            <li
-              className={tabIndex === 3 ? "tab_button active" : "tab_button"}
-              onClick={() => toggleIndex(3)}
-            >
-              <i>
-                <FaLightbulb />
-              </i>
-              <span>Solution</span>
-            </li>
-          </ul>
-        </div>
+    <section className="container tab_content_slider">
+      {/* <div className="tab_navigation_bar"> */}
+      <div className="tab_navigation">
+        <ul className="tab_menu">
+          <li
+            className={tabIndex === 1 ? "tab_button active" : "tab_button"}
+            onClick={() => toggleIndex(1)}
+          >
+            <i>
+              <FaSunPlantWilt />
+            </i>
+            <span>Purpose</span>
+          </li>
+          <li
+            className={tabIndex === 2 ? "tab_button active" : "tab_button"}
+            onClick={() => toggleIndex(2)}
+          >
+            <i>
+              <FaSunPlantWilt />
+            </i>
+            <span>Problems</span>
+          </li>
+          <li
+            className={tabIndex === 3 ? "tab_button active" : "tab_button"}
+            onClick={() => toggleIndex(3)}
+          >
+            <i>
+              <FaLightbulb />
+            </i>
+            <span>Solution</span>
+          </li>
+        </ul>
       </div>
+      {/* </div> */}
 
       <div className="tab_contents">
         <div className={tabIndex === 1 ? "tab_item active" : "tab_item"}>

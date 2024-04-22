@@ -1,39 +1,30 @@
 import "./Sidebar.scss";
+import { useContext } from "react";
+import { AppContext } from "../Context/SidebarToggle";
 
 function Sidebar() {
+  const { sidebarToggle, setSidebarToggle } = useContext(AppContext);
+  const sidebarHandler = (click) => {
+    setSidebarToggle(click);
+  };
   return (
-    <div className="menu">
+    <div className={sidebarToggle ? "menu open" : "menu"}>
       <div className="sidebar">
-        <button className="openSidebar">X</button>
-
-        <div className="sidebar_left">
+        <button className="openSidebar" onClick={() => sidebarHandler(false)}>
+          X
+        </button>
+        <div className="sidebar_items">
           <ul>
             <li>
-              <a href="">sad</a>
+              <a href="">Home</a>
             </li>
             <li>
-              <a href="">csas</a>
+              <a href="">Find Us</a>
             </li>
             <li>
-              <a href="">asdad</a>
+              <a href="">Deforestation Location</a>
             </li>
           </ul>
-        </div>
-        <div className="sidebar_right">
-          <ul>
-            <li>
-              <a href="">ku</a>
-            </li>
-            <li>
-              <a href="">mu</a>
-            </li>
-            <li>
-              <a href="">sd</a>
-            </li>
-          </ul>
-        </div>
-        <div className="sidebar_bottom">
-          <h6>Social Media</h6>
         </div>
       </div>
     </div>

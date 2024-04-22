@@ -1,28 +1,48 @@
 @import "../Index.scss";
 
 .menu {
-  display: none;
+  display: flex;
   z-index: 100;
-  // background-color: rgba(240, 248, 255, 0.185);
   width: 100vw;
   height: 100vh;
   top: 0;
-  right: 0;
+  right: -100vw;
   position: fixed;
-  li {
-    list-style-type: none;
-  }
-  a {
-    color: whitesmoke;
-    text-decoration: none;
-  }
+  justify-content: end;
+  transition: 0.5s ease-in-out;
   .sidebar {
-    float: right;
-    width: 50vw;
-    height: 100vh;
+    width: 35%;
+    height: 100%;
     background-color: $primary_color;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    color: $text-light-color;
+    button {
+      background: none;
+      color: $text-light-color;
+      border: none;
+      cursor: pointer;
+      margin: 1rem;
+    }
+    .sidebar_items {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        li {
+          list-style-type: none;
+          text-align: center;
+          a {
+            color: whitesmoke;
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
+}
+.menu.open {
+  right: 0;
 }

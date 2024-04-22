@@ -42,7 +42,7 @@ function Footer() {
             </div>
           </div>
           <div className="footer_bottom_right">
-            <h1>END OF WEB</h1>
+            <p>Copyright 2024</p>
           </div>
         </div>
       </footer>

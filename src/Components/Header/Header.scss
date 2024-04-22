@@ -16,10 +16,10 @@ header {
       margin: auto 0;
       .brandLogo_content::after {
         content: "";
-        width: 2px; /* Lebar garis vertikal */
-        height: 30px; /* Tinggi garis vertikal */
-        background-color: #333; /* Warna garis vertikal */
-        margin-left: 10px; /* Jarak antara logo dan garis */
+        width: 2px;
+        height: 30px;
+        background-color: #333;
+        margin-left: 10px;
       }
       .brandLogo_content {
         font-size: 1.25em;
@@ -30,7 +30,7 @@ header {
           color: gray;
         }
         &_span2 {
-          color: green;
+          color: $primary_color;
         }
       }
     }

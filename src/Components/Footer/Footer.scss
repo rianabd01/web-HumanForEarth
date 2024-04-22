@@ -11,20 +11,14 @@ footer {
   padding: 2rem 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  // .footer_left::after {
-  //   content: "";
-  //   background-color: black;
-  //   width: 10px;
-  //   height: 100%;
-  //   position: absolute;
-  //   right: 0;
-  // }
+  grid-template-rows: repeat(3fr, 3fr, 1fr);
+  gap: 1rem;
+
   .footer_left {
     grid-column-start: 1;
     grid-row-start: 1;
     grid-column-end: 2;
-    grid-row-end: 4;
+    grid-row-end: 3;
     display: flex;
     ul {
       margin: auto 0;
@@ -49,6 +43,18 @@ footer {
     flex-direction: row;
 
     .footer_title {
+      position: relative;
+      ::after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        top: 75px;
+        bottom: 75px;
+        width: 1px; // Lebar garis
+        background-color: $text-light-color; // Warna garis
+      }
+    }
+    .footer_title {
       width: 100%;
       flex: 1;
       display: flex;
@@ -66,26 +72,66 @@ footer {
       flex-direction: row;
       margin-left: 5rem;
       form {
+        text-transform: uppercase;
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 100%;
+        label {
+          margin-top: 1rem;
+        }
+        input {
+          text-transform: uppercase;
+          border-radius: 0.25rem;
+          padding: 5px 10px;
+          background: none;
+          border: 1px solid #aaaaaa;
+          color: $text-light-color;
+        }
+
+        input:focus {
+          border: 1px solid #aaaaaa;
+          background: none;
+          outline: none;
+        }
         textarea {
+          text-transform: uppercase;
+          padding: 5px 10px;
           max-width: 100%;
           min-width: 50%;
           resize: none;
+          border-radius: 0.25rem;
+          border: 1px solid #aaaaaa;
+          background: none;
+          color: $text-light-color;
+        }
+        textarea:focus {
+          border: 1px solid #aaaaaa;
+          background: none;
+          outline: none;
+        }
+        button {
+          margin-top: 1rem;
+          width: 5rem;
+          height: 2rem;
+          border-radius: 0.25rem;
+          background-color: $primary_color-revert;
+          cursor: pointer;
+          border: none;
+        }
+        button:hover {
+          box-shadow: 1px 1px 4px black;
         }
       }
     }
   }
   .footer_bottom_right {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row-start: 3;
     grid-column-end: 5;
     grid-row-end: 5;
     display: flex;
-    h1 {
-      margin: auto;
-    }
+    justify-content: center;
+    padding: 2rem;
   }
 }
